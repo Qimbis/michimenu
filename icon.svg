@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="28" fill="#fdf6ee"/>
+  <!-- orejas -->
+  <path d="M34 52 L28 24 L52 38 Z" fill="#e8672c"/>
+  <path d="M94 52 L100 24 L76 38 Z" fill="#e8672c"/>
+  <path d="M36 48 L33 32 L46 40 Z" fill="#fdeadd"/>
+  <path d="M92 48 L95 32 L82 40 Z" fill="#fdeadd"/>
+  <!-- cara -->
+  <circle cx="64" cy="72" r="38" fill="#e8672c"/>
+  <!-- gorro de chef -->
+  <g transform="translate(0,-4)">
+    <ellipse cx="50" cy="30" rx="12" ry="10" fill="#fff"/>
+    <ellipse cx="64" cy="26" rx="13" ry="11" fill="#fff"/>
+    <ellipse cx="78" cy="30" rx="12" ry="10" fill="#fff"/>
+    <rect x="44" y="30" width="40" height="12" rx="4" fill="#fff"/>
+  </g>
+  <!-- ojos malvados -->
+  <path d="M44 64 Q52 58 58 65 Q52 68 44 64 Z" fill="#3d2c22"/>
+  <path d="M84 64 Q76 58 70 65 Q76 68 84 64 Z" fill="#3d2c22"/>
+  <!-- nariz -->
+  <path d="M61 76 L67 76 L64 81 Z" fill="#3d2c22"/>
+  <!-- sonrisa malvada -->
+  <path d="M46 84 Q55 94 64 88 Q73 94 82 84" fill="none" stroke="#3d2c22" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- bigotes -->
+  <g stroke="#3d2c22" stroke-width="2.5" stroke-linecap="round">
+    <line x1="30" y1="76" x2="14" y2="72"/>
+    <line x1="30" y1="84" x2="14" y2="86"/>
+    <line x1="98" y1="76" x2="114" y2="72"/>
+    <line x1="98" y1="84" x2="114" y2="86"/>
+  </g>
+</svg>

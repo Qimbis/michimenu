@@ -1,0 +1,13 @@
+{
+  "name": "MichiMenú",
+  "short_name": "MichiMenú",
+  "description": "Menú semanal, recetas y súper — con energía de michi malvado.",
+  "lang": "es-MX",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fdf6ee",
+  "theme_color": "#e8672c",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
