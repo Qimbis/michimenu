@@ -354,6 +354,97 @@ const MICHI_DATA = {
       steps: ["Calentar la tinga.", "Tacos con aguacate y limón. Cierre de semana sin cocinar de más."],
       nutri: { e: "~440 kcal · 32 g proteína", u: "~700 kcal · 48 g proteína" },
     },
+    "prep-caldo": {
+      t: "Caldo de pollo (base del martes)", emoji: "🍜", time: "10 min manos + 40–50 min",
+      ing: [
+        { n: "Pollo con hueso (muslo, pierna, alita)", e: "1.2–1.5 kg", u: "1.2–1.5 kg" },
+        { n: "Zanahoria en rodajas gruesas de ~3 cm", e: "2 piezas", u: "2 piezas" },
+        { n: "Papa en cubos grandes de ~4 cm", e: "1–2 piezas", u: "1–2 piezas" },
+        { n: "Calabacita en medias lunas de ~2 cm (va al final)", e: "1–2 piezas", u: "1–2 piezas" },
+        { n: "Apio en trozos de ~5 cm", e: "1–2 tallos", u: "1–2 tallos" },
+        { n: "Cebolla en trozo grande + ajo machacado", e: "½ + 2–3 dientes", u: "½ + 2–3 dientes" },
+        { n: "Sal, laurel (1–2 hojas), pimienta en grano (6–8), consomé opcional", e: "al gusto", u: "al gusto" },
+      ],
+      steps: [
+        "Pon el pollo en AGUA FRÍA desde el inicio, que lo cubra bien.",
+        "Agrega zanahoria, papa, apio, cebolla, ajo, laurel, pimienta y sal.",
+        "Sube a hervor y ESPUMA la nata gris de la superficie (caldo limpio).",
+        "Baja el fuego, tapa entreabierta, 40–50 min.",
+        "Mete la calabacita solo los últimos 15 min (si no, se hace puré).",
+        "Saca el pollo: deshebra la mayoría para los otros platos, deja unos trozos en el caldo.",
+        "Servir el martes: caldo + verdura + pollo + arroz; aparte aguacate, limón, cebolla, cilantro. El chile, aparte para ti.",
+      ],
+    },
+    "prep-salsa-base": {
+      t: "Salsa base roja (comodín de 4 platos)", emoji: "🍅", time: "15 min",
+      ing: [
+        { n: "Jitomate maduro (entero)", e: "6 piezas", u: "6 piezas" },
+        { n: "Cebolla en cuartos", e: "½ pieza", u: "½ pieza" },
+        { n: "Ajo pelado", e: "2 dientes", u: "2 dientes" },
+        { n: "Sal + 1 pizca de comino (orégano opcional)", e: "al gusto", u: "al gusto" },
+      ],
+      steps: [
+        "Asa en comal jitomate, cebolla y ajo hasta que tengan manchas negras (más sabor); o hiérvelos 10 min.",
+        "Licua con sal y comino.",
+        "Opcional: sofríe la salsa 5 min en 1 cdita de aceite para concentrar el sabor.",
+        "Frasco al refri. Es la base de garbanzos, tinga, albóndigas y pasta.",
+      ],
+    },
+    "prep-salsa-verde": {
+      t: "Salsa verde ligera (chilaquiles y tinga)", emoji: "🌶️", time: "12 min",
+      ing: [
+        { n: "Tomate verde pelado y enjuagado", e: "8–10 piezas", u: "8–10 piezas" },
+        { n: "Chile suave SIN semillas (jalapeño o serrano chico)", e: "1 pieza", u: "1 pieza" },
+        { n: "Ajo + ¼ de cebolla cruda", e: "1 diente", u: "1 diente" },
+        { n: "Cilantro (poquito) y sal", e: "al gusto", u: "al gusto" },
+      ],
+      steps: [
+        "Hierve tomate verde + chile 8 min, hasta que cambien de color.",
+        "Licua con el ajo, la cebolla CRUDA, cilantro y sal.",
+        "Frasco aparte. Sin semillas = picor suave para que le guste a ella.",
+      ],
+    },
+    "prep-arroz": {
+      t: "Arroz blanco", emoji: "🍚", time: "5 min manos + 15 min",
+      ing: [
+        { n: "Arroz enjuagado", e: "1 taza", u: "1 taza" },
+        { n: "Agua caliente o caldo del pollo", e: "2 tazas", u: "2 tazas" },
+        { n: "Cebolla, ajo, ½ cdita de aceite, sal", e: "½ + 1 diente", u: "½ + 1 diente" },
+      ],
+      steps: [
+        "Dora el arroz 2 min con el aceite, el ajo y la cebolla.",
+        "Agrega el líquido CALIENTE + sal.",
+        "Tapa 15 min a fuego bajo; apaga y reposa 5 min sin destapar.",
+        "Esponja con un tenedor.",
+      ],
+    },
+    "prep-garbanzos": {
+      t: "Garbanzos (rinden 2 platos)", emoji: "🫘", time: "5 min (de lata)",
+      ing: [
+        { n: "Garbanzos de lata (o secos remojados)", e: "2 latas", u: "2 latas" },
+        { n: "Si son secos: ajo, ¼ cebolla, 1 laurel, sal", e: "al gusto", u: "al gusto" },
+      ],
+      steps: [
+        "De lata: enjuaga MUY bien (les quita el sabor a lata).",
+        "Secos: cuece con ajo, cebolla, laurel y sal ~40 min (o exprés en olla de presión).",
+        "Táper al refri. Rinden guisados (miércoles) + ensalada (lunes).",
+      ],
+    },
+    "prep-mise": {
+      t: "Picar la semana (mise en place)", emoji: "🔪", time: "15 min",
+      ing: [
+        { n: "Zanahoria: mitad en juliana (tiras finas) + mitad en cubo chico", e: "—", u: "—" },
+        { n: "Espinaca: lavada y bien seca, hoja entera", e: "—", u: "—" },
+        { n: "Champiñones: rebanados de ~½ cm", e: "—", u: "—" },
+        { n: "Cebolla morada: fileteada fina, en agua con limón", e: "—", u: "—" },
+        { n: "Pepino y lechuga: NO picar hoy (se aguadan)", e: "—", u: "—" },
+      ],
+      steps: [
+        "Corta cada verdura a su tamaño y guárdala en su táper.",
+        "Mete UNA toalla de papel en cada táper: absorbe humedad y dura fresca toda la semana.",
+        "El pepino y la lechuga se cortan al momento de usarlos.",
+      ],
+    },
   },
 
   weeks: [
@@ -463,14 +554,16 @@ const MICHI_DATA = {
         "El pollo es el héroe de la semana: un solo cocido da el caldo + el pollo deshebrado de 3 platos.",
       ],
       prep: {
-        title: "Prep del sábado (hoy, 60–90 min)",
+        title: "Prep del sábado (hoy, 75–90 min)",
+        intro: "El pollo es el héroe: un solo cocido da el caldo + el deshebrado de 3 platos. Arráncalo primero y haz lo demás mientras hierve. Toca cada paso para ver receta, cortes y condimentos. 👇",
         items: [
-          "Caldo de pollo grande: cocer 1.2–1.5 kg de pollo con zanahoria, papa, calabacita y apio (rinde la comida del martes)",
-          "Deshebrar parte del pollo aparte → para tinga, chilaquiles y pasta",
-          "Garbanzos: cocer o abrir de lata (2 usos: guisados + ensalada)",
-          "Salsa base: licuar jitomate + cebolla + ajo → frasco al refri",
-          "Salsa verde ligera: tomate verde + chile suave (chilaquiles y tinga)",
-          "Cocer arroz; lavar y picar verduras; congelar fruta para licuados",
+          { t: "1. Arranca el caldo de pollo (primero)", r: "prep-caldo" },
+          { t: "2. Salsa base roja", r: "prep-salsa-base" },
+          { t: "3. Salsa verde ligera", r: "prep-salsa-verde" },
+          { t: "4. Arroz blanco", r: "prep-arroz" },
+          { t: "5. Garbanzos", r: "prep-garbanzos" },
+          { t: "6. Picar la semana", r: "prep-mise" },
+          "7. Fruta para licuados: pica fresa, mango y plátano en porciones de 1 taza → bolsitas al congelador.",
         ],
       },
       days: [

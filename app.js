@@ -69,7 +69,12 @@ function renderSemana() {
   return `
     <div class="card">${days}</div>
     <div class="card"><h2>${esc(WEEK.prep.title)}</h2>
-      <ul class="prep-list">${WEEK.prep.items.map(p => `<li>${esc(p)}</li>`).join("")}</ul>
+      ${WEEK.prep.intro ? `<p class="snack-note" style="padding:0 6px 8px">${esc(WEEK.prep.intro)}</p>` : ""}
+      <ul class="prep-list">${WEEK.prep.items.map(p =>
+        typeof p === "string"
+          ? `<li>${esc(p)}</li>`
+          : `<li class="prep-step" data-recipe="${esc(p.r)}" style="cursor:pointer">${esc(p.t)} <span style="opacity:.6;font-size:.85em;white-space:nowrap">ver receta ›</span></li>`
+      ).join("")}</ul>
     </div>`;
 }
 
@@ -139,9 +144,9 @@ function openRecipe(rid) {
     <h4>Ingredientes</h4>${ings}
     <h4>Preparación</h4>
     <ol class="steps">${r.steps.map(s => `<li>${esc(s)}</li>`).join("")}</ol>
-    <details class="nutri"><summary>Info nutricional</summary>
+    ${r.nutri ? `<details class="nutri"><summary>Info nutricional</summary>
       <p>Ella: ${esc(r.nutri.e)}<br>Tú: ${esc(r.nutri.u)}</p>
-    </details>`;
+    </details>` : ""}`;
   document.getElementById("modal").classList.add("open");
 }
 document.getElementById("modal").addEventListener("click", e => {
