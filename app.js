@@ -137,11 +137,19 @@ function openRecipe(rid) {
       : `<b>${esc(i.e)}</b> ella<br><b>${esc(i.u)}</b> tú`;
     return `<div class="ing"><span>${esc(i.n)}</span><span class="amt">${amt}</span></div>`;
   }).join("");
+  const split = r.split ? `
+    <div class="split">
+      <div class="split-h">🍽️ Cómo repartir</div>
+      <div class="row"><b>Ella:</b> ${esc(r.split.ella)}</div>
+      <div class="row"><b>Tú:</b> ${esc(r.split.tu)}</div>
+      ${r.split.nota ? `<div class="split-n">${esc(r.split.nota)}</div>` : ""}
+    </div>` : "";
   document.getElementById("sheet").innerHTML = `
     <div class="handle"></div>
     <h3>${r.emoji} ${esc(r.t)}</h3>
     <div class="time">⏱ ${esc(r.time)}</div>
-    <h4>Ingredientes</h4>${ings}
+    <h4>Ingredientes${r.combined ? ` <span class="lbl-dos">· para los dos</span>` : ""}</h4>${ings}
+    ${split}
     <h4>Preparación</h4>
     <ol class="steps">${r.steps.map(s => `<li>${esc(s)}</li>`).join("")}</ol>
     ${r.nutri ? `<details class="nutri"><summary>Info nutricional</summary>
