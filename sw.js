@@ -1,6 +1,6 @@
 /* MichiMenú SW — network-first, cache = solo respaldo offline.
    (Lección del huerto: cache-first congela deploys para siempre.) */
-const CACHE = "michimenu-v1";
+const CACHE = "michimenu-v2";
 const SHELL = ["./", "index.html", "app.js", "data.js", "manifest.webmanifest", "icon.svg"];
 
 self.addEventListener("install", e => {
@@ -18,7 +18,7 @@ self.addEventListener("activate", e => {
 self.addEventListener("fetch", e => {
   if (e.request.method !== "GET") return;
   e.respondWith(
-    fetch(e.request)
+    fetch(e.request, { cache: "no-store" })
       .then(res => {
         const copy = res.clone();
         caches.open(CACHE).then(c => c.put(e.request, copy));

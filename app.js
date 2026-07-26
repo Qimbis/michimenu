@@ -235,3 +235,23 @@ render();
 if ("serviceWorker" in navigator && location.protocol === "https:") {
   navigator.serviceWorker.register("sw.js");
 }
+
+/* ---------- botón Actualizar (jala la versión fresca desde GitHub) ---------- */
+async function forceRefresh() {
+  const btn = document.getElementById("refresh-app");
+  if (btn) { btn.textContent = "⏳"; btn.disabled = true; }
+  try {
+    if ("caches" in window) {
+      const keys = await caches.keys();
+      await Promise.all(keys.map(k => caches.delete(k)));
+    }
+    if (navigator.serviceWorker) {
+      const regs = await navigator.serviceWorker.getRegistrations();
+      await Promise.all(regs.map(r => r.update()));
+    }
+    // Pide data.js fresco saltándose el caché HTTP antes de recargar.
+    await fetch("data.js?v=" + Date.now(), { cache: "reload" }).catch(() => {});
+  } catch (e) { /* aunque falle algo, recargamos igual */ }
+  location.reload();
+}
+document.getElementById("refresh-app").addEventListener("click", forceRefresh);
