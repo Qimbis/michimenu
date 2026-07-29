@@ -1,4 +1,16 @@
-# MichiMenú 😼
+# MichiMenú 😼 — CONGELADO (2026-07-28)
+
+**Este repo está congelado, no borrado.** MichiMenú migró a la plataforma
+multi-hogar [Semanita](https://semanita.app/h/michi/) — los dos miembros del
+hogar tienen cuenta (enrolados vía invites) y sus checks sincronizan por
+servidor. Desde el 2026-07-28: `data.js` **ya no se actualiza** (la semana
+viva se siembra en la BD de Semanita — ver
+`projects/menu-platform/db/README.md`), el deploy de GitHub Pages sigue en
+línea solo como respaldo con un banner de mudanza, y la historia queda como
+referencia (fue el molde original de toda la familia de apps). Mismo
+tratamiento que capimenu recibió el mismo día.
+
+---
 
 Menú semanal, recetas con porciones en gramos (ella/tú), lista del súper con
 links a Walmart, y buzón de antojos para la próxima semana. PWA estática —

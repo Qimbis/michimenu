@@ -137,6 +137,14 @@
   details.nutri { margin-top: 16px; border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; background: var(--card); }
   details.nutri summary { font-size: .82rem; color: var(--muted); cursor: pointer; font-weight: 600; }
   details.nutri p { font-size: .85rem; margin-top: 8px; }
+
+  /* Congelado 2026-07-28: banner de mudanza a Semanita (mismo patrón que capimenu) */
+  .mudanza {
+    max-width: 560px; margin: 0 auto 4px; padding: 10px 16px;
+    background: var(--accent-soft); border: 1px solid var(--accent);
+    border-radius: 12px; font-size: .85rem; line-height: 1.5;
+  }
+  .mudanza a { color: var(--accent); font-weight: 700; }
 </style>
 </head>
 <body>
@@ -146,6 +154,9 @@
   <div class="week-label" id="week-label"></div>
   <button id="refresh-app" title="Actualizar desde GitHub" aria-label="Actualizar menú">🔄</button>
 </header>
+<div class="mudanza">🐱📦 <b>MichiMenú se mudó de casa.</b> Tu menú de cada
+semana ahora vive en <a href="https://semanita.app/h/michi/">semanita.app</a>
+— instálala desde ahí. Esta versión ya no se actualiza.</div>
 <main id="view"></main>
 <nav id="nav">
   <button data-tab="hoy"><span class="ico">🐱</span>Hoy</button>
